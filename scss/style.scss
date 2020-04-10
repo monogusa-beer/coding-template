@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@import "setting/config";
+
+@import "mixin/mixin";
+
+@import "base/reset";
+@import "base/base";
+
+// @import "module/";
+
+@import "page/index";
+
+// 一時的に使うcss
+@import "temp/temp";
