@@ -113,7 +113,9 @@ button {
           appearance: none;
 }
 
-* {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
