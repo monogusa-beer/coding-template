@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "setting/config";
+@import "setting/variables";
 
 @import "mixin/mixin";
 
@@ -9,9 +9,10 @@
 
 @import "layout/layout";
 
-// @import "module/";
+@import "module/header";
+@import "module/footer";
 
-@import "page/index";
+@import "utility/utility";
 
 // 一時的に使うcss
 @import "temp/temp";
