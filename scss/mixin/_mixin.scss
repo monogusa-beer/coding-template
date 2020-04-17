@@ -1,5 +1,11 @@
 @mixin mq($breakpoint) {
-	@media screen and (min-width: map-get($breakpoints,$breakpoint)) {
-		@content;
-	}
+  @media screen and (min-width: map-get($breakpoints,$breakpoint)) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
 }
