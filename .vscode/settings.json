@@ -1,0 +1,40 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.wordWrap": "on",
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Ricty Diminished",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.sideBar.location": "left",
+  "files.autoSave": "afterDelay",
+  "editor.renderWhitespace": "all",
+  "vsicons.dontShowNewVersionMessage": true,
+  "explorer.confirmDelete": false,
+  "emmet.variables": {
+    "lang": "ja"
+  },
+  "files.trimTrailingWhitespace": true,
+  "editor.minimap.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "vscode-w3cvalidation.javaHome": "/Library/Java/JavaVirtualMachines/jjdk-13.0.2.jdk",
+  "vscode-w3cvalidation.validator-token": "Sun, 26 Apr 2020 03:30:52 GMT",
+  "editor.dragAndDrop": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "oneDarkPro.vivid": false,
+  "emmet.triggerExpansionOnTab": true,
+  "auto-rename-tag.activationOnLanguage": ["*"],
+  "workbench.editor.enablePreview": false,
+  "cSpell.userWords": ["hoge", "mozjpeg", "stylelint", "wordpress"],
+  "javascript.format.enable": false,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  }
+}
