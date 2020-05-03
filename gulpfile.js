@@ -61,7 +61,7 @@ gulp.task("default", gulp.series(gulp.parallel("browser-sync", "watch")));
 
 //圧縮率の定義
 const imageminOption = [
-  pngquant({ quality: [70 - 85] }),
+  pngquant({ quality: [0.7, 0.85] }),
   mozjpeg({ quality: 85 }),
   imagemin.gifsicle({
     interlaced: false,
