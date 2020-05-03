@@ -11,8 +11,6 @@ const sourcemaps = require("gulp-sourcemaps");
 const imagemin = require("gulp-imagemin");
 const pngquant = require("imagemin-pngquant");
 const mozjpeg = require("imagemin-mozjpeg");
-const ejs = require("gulp-ejs");
-const rename = require("gulp-rename");
 
 // scssのコンパイル
 gulp.task("sass", function () {
@@ -50,25 +48,12 @@ gulp.task("bs-reload", function (done) {
   done();
 });
 
-gulp.task("ejs", (done) => {
-  gulp
-    .src(["ejs/**/*.ejs", "!" + "ejs/**/_*.ejs"])
-    .pipe(
-      plumber({ errorHandler: notify.onError("Error: <%= error.message %>") })
-    )
-    .pipe(rename({ extname: ".html" }))
-    .pipe(gulp.dest("./"));
-  done();
-});
-
 // 監視
 gulp.task("watch", function (done) {
   gulp.watch("./*.html", gulp.task("bs-reload"));
   gulp.watch("./scss/**/*.scss", gulp.task("sass"));
   gulp.watch("./scss/**/*.scss", gulp.task("bs-reload"));
   gulp.watch("./js/*.js", gulp.task("bs-reload"));
-  gulp.watch("./ejs/**/*.ejs", gulp.task("ejs"));
-  gulp.watch("./ejs/**/*.ejs", gulp.task("bs-reload"));
 });
 
 // default
