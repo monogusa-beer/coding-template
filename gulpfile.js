@@ -28,8 +28,8 @@ gulp.task("sass", function () {
     )
     .pipe(postcss([autoprefixer()]))
     .pipe(postcss([cssdeclsort({ order: "alphabetical" })]))
-    .pipe(gulp.dest("./css"))
-    .pipe(sourcemaps.write("./css"));
+    .pipe(sourcemaps.write("./"))
+    .pipe(gulp.dest("./css"));
 });
 
 // 保存時のリロード
