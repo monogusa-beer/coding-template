@@ -34,5 +34,10 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-prettier": "^1.1.2",
     "stylelint-scss": "^3.17.1"
-  }
+  },
+  "browserslist": [
+    "> 1% in JP",
+    "last 2 versions",
+    "Firefox ESR"
+  ]
 }
