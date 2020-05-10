@@ -26,7 +26,14 @@ gulp.task("sass", function () {
         outputStyle: "expanded",
       })
     )
-    .pipe(postcss([autoprefixer()]))
+    .pipe(
+      postcss([
+        autoprefixer({
+          grid: true,
+          cascade: false,
+        }),
+      ])
+    )
     .pipe(postcss([cssdeclsort({ order: "alphabetical" })]))
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("./css"));
