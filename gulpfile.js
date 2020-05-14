@@ -42,11 +42,7 @@ function sass() {
       plumber({ errorHandler: notify.onError("Error: <%= error.message %>") })
     )
     .pipe(sassGlob())
-    .pipe(
-      gulpSass({
-        outputStyle: "expanded",
-      })
-    )
+    .pipe(gulpSass({ outputStyle: "expanded" }))
     .pipe(postcss([mqpacker()]))
     .pipe(postcss([cssdeclsort({ order: "alphabetical" })]))
     .pipe(
