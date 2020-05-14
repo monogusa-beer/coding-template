@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<% const title = 'タイトル'; %>
+	<% const desc = 'サイトの説明'; %>
+	<% const path = './' ; %>
+  <head>
+    <%- include('./common/_head', {title,desc,path}) %>
+  </head>
+  <body>
+    <%- include('./common/_header') %>
+    <main></main>
+    <%- include('./common/_footer', {path}) %>
+  </body>
+</html>
